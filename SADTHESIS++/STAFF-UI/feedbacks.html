@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact Us and Feedback</title>
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	left:484px;
+	top:160px;
+	width:595px;
+	height:350px;
+	z-index:1;
+}
+body {
+	background-image: url(wallpaper.jpg);
+}
+#apDiv2 {
+	position:absolute;
+	left:352px;
+	top:42px;
+	width:860px;
+	height:62px;
+	z-index:2;
+}
+#apDiv1 table tr td label {
+	font-size: 36px;
+}
+#apDiv1 table tr td {
+	font-weight: bold;
+}
+</style>
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('NavButtons/about2.png','NavButtons/home2.png','NavButtons/menu2.png','NavButtons/upcoming2.png','NavButtons/contact2.png')">
+<div id="apDiv1">
+  <table width="598" height="330" border="1">
+    <tr bgcolor="#996633">
+      <td height="105" colspan="2"><label for="textarea">FeedBack</label></td>
+    </tr>
+    <tr bgcolor="#CCCC99">
+      <td height="105">Name: </td>
+      <td height="105"><form id="form1" name="form1" method="post" action="">
+        <label for="textfield2"></label>
+        <input name="textfield" type="text" id="textfield2" size="50" maxlength="100" />
+      </form></td>
+    </tr>
+    <tr bgcolor="#CCCC99">
+      <td>Comments/Suggestion :</td>
+      <td><textarea name="textarea" id="textarea" cols="45" rows="5"></textarea></td>
+    </tr>
+    <tr bgcolor="#CCCC99">
+      <td colspan="2"><div align="right">
+        <form id="form2" name="form2" method="post" action="">
+          <input name="button" type="submit" id="button" onclick="MM_popupMsg('Thank you for contacting us! Your comment/suggestions has been sent.')" value="Send" />
+        </form>
+      </div></td>
+    </tr>
+    <tr bgcolor="#CCCC99">
+      <td>Contact us:</td>
+      <td><p>0977-685-8030</p>
+      <p>785-5565</p></td>
+    </tr>
+    <tr bgcolor="#CCCC99">
+      <td>Email us:</td>
+      <td><p>
+        <label for="textfield"></label>
+      thecuckoochef@gmail.com</p></td>
+    </tr>
+  </table>
+</div>
+<div id="apDiv2"><a href="aboutus.htm" target="_parent"><img src="NavButtons/about1.png" width="142" height="52" id="Image1" onmouseover="MM_swapImage('Image1','','NavButtons/about2.png',1);MM_effectAppearFade(this, 1000, 0, 100, false)" onmouseout="MM_swapImgRestore()" /></a><a href="Homepage.htm" target="_parent"><img src="NavButtons/home1.png" width="135" height="52" id="Image2" onmouseover="MM_swapImage('Image2','','NavButtons/home2.png',1);MM_effectAppearFade(this, 1000, 0, 100, false)" onmouseout="MM_swapImgRestore()" /></a><a href="MENUFRAMESET.html" target="_parent"><img src="NavButtons/menu1.png" width="145" height="52" id="Image3" onmouseover="MM_swapImage('Image3','','NavButtons/menu2.png',1);MM_effectAppearFade(this, 1000, 0, 100, false)" onmouseout="MM_swapImgRestore()" /></a><img src="NavButtons/upcoming1.png" width="229" height="52" id="Image4" onmouseover="MM_swapImage('Image4','','NavButtons/upcoming2.png',1);MM_effectAppearFade(this, 1000, 0, 100, false)" onmouseout="MM_swapImgRestore()" /><a href="feedbacks.html" target="_parent"><img src="NavButtons/contact1.png" width="186" height="52" id="Image5" onmouseover="MM_swapImage('Image5','','NavButtons/contact2.png',1);MM_effectAppearFade(this, 1000, 0, 100, false)" onmouseout="MM_swapImgRestore()" /></a></div>
+</body>
+</html>

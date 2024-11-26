@@ -1,0 +1,575 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Inventory</title>
+<style type="text/css">
+body {
+	background-image: url(wallpaper.jpg);
+}
+#apDiv1 {
+	position:absolute;
+	left:27px;
+	top:122px;
+	width:1480px;
+	height:1443px;
+	z-index:1;
+}
+#apDiv2 {
+	position:absolute;
+	left:1315px;
+	top:88px;
+	width:149px;
+	height:46px;
+	z-index:2;
+	color: #FFF;
+}
+.xsca {
+	font-size: 14px;
+}
+.sxcascascaC {
+	font-size: 18px;
+}
+#apDiv3 {
+	position:absolute;
+	left:114px;
+	top:156px;
+	width:561px;
+	height:176px;
+	z-index:3;
+}
+#apDiv4 {
+	position:absolute;
+	left:675px;
+	top:247px;
+	width:810px;
+	height:55px;
+	z-index:4;
+}
+#apDiv5 {
+	position:absolute;
+	left:111px;
+	top:440px;
+	width:809px;
+	height:134px;
+	z-index:5;
+	font-size: 36px;
+}
+#apDiv5 h1 {
+	color: #FFF;
+}
+#apDiv6 {
+	position:absolute;
+	left:115px;
+	top:694px;
+	width:784px;
+	height:46px;
+	z-index:6;
+	color: #FFF;
+}
+#apDiv6 table tr td {
+	text-align: center;
+}
+#apDiv7 {
+	position:absolute;
+	left:118px;
+	top:600px;
+	width:693px;
+	height:71px;
+	z-index:1;
+}
+#apDiv8 {
+	position:absolute;
+	left:1058px;
+	top:567px;
+	width:299px;
+	height:110px;
+	z-index:7;
+}
+body,td,th {
+	color: #FFF;
+}
+#apDiv9 {
+	position:absolute;
+	left:1322px;
+	top:193px;
+	width:136px;
+	height:44px;
+	z-index:8;
+	visibility: hidden;
+}
+#apDiv10 {
+	position:absolute;
+	left:1231px;
+	top:1462px;
+	width:110px;
+	height:51px;
+	z-index:9;
+}
+#apDiv11 {
+	position:absolute;
+	left:1049px;
+	top:385px;
+	width:264px;
+	height:81px;
+	z-index:10;
+}
+#apDiv12 {
+	position:absolute;
+	left:905px;
+	top:591px;
+	width:103px;
+	height:60px;
+	z-index:11;
+}
+#apDiv13 {	position:absolute;
+	left:84px;
+	top:46px;
+	width:791px;
+	height:44px;
+	z-index:1;
+}
+#poultry {
+	position:absolute;
+	left:114px;
+	top:765px;
+	width:888px;
+	height:346px;
+	z-index:2;
+	visibility: hidden;
+}
+#meat {
+	position:absolute;
+	left:113px;
+	top:758px;
+	width:888px;
+	height:346px;
+	z-index:2;
+	visibility: hidden;
+}
+#veggies {
+	position:absolute;
+	left:116px;
+	top:754px;
+	width:888px;
+	height:346px;
+	z-index:2;
+	visibility: hidden;
+}
+#fruits {
+	position:absolute;
+	left:116px;
+	top:756px;
+	width:888px;
+	height:346px;
+	z-index:2;
+	visibility: hidden;
+}
+#beverages {
+	position:absolute;
+	left:115px;
+	top:758px;
+	width:888px;
+	height:346px;
+	z-index:2;
+	visibility: hidden;
+}
+#Others {
+	position:absolute;
+	left:115px;
+	top:753px;
+	width:888px;
+	height:346px;
+	z-index:2;
+	visibility: hidden;
+}
+#apDiv14 {
+	position:absolute;
+	left:836px;
+	top:1160px;
+	width:166px;
+	height:46px;
+	z-index:11;
+}
+</style>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('NavButtons/images/LUH_08.png','NavButtons/images/LUH_03.png','NavButtons/images/LUH_19.png','NavButtons/images/LUH_17.png','NavButtons/images/LUH_21.png','NavButtons/images/23_05.png')">
+<div id="apDiv1"></div>
+<div id="apDiv2">
+  <h2 onfocus="MM_showHideLayers('apDiv9','','show')"><img src="images/pictures/administrator-icon.png" width="75" height="74" align="left" onclick="MM_showHideLayers('apDiv9','','show')" />Admin </h2>
+</div>
+<div id="apDiv3"><img src="images/pictures/THECUCKOO.jpg" width="560" height="257" /></div>
+<div id="apDiv4"><a href="images/NavButtons/images/adminbutt_03.png" target="_parent"><img src="images/NavButtons/images/adminbutt_03.png" width="114" height="43" /></a><a href="Inventory.html" target="_parent"><img src="images/NavButtons/images/adminbutt_06.png" width="155" height="43" /></a><a href="Update.html" target="_parent"><img src="images/NavButtons/images/adminbutt_09.png" width="136" height="44" /></a><a href="Accounts.html" target="_parent"><img src="images/NavButtons/images/adminbutt_12.png" width="139" height="43" /></a><a href="Order summation.html" target="_parent"><img src="images/NavButtons/images/adminbutt_15.png" width="230" height="43" /></a></div>
+<div id="apDiv5">
+  <h1>Welcome Admin!</h1>
+</div>
+<div id="apDiv7">
+  <form>
+    <h1>SEARCH:
+      <input type="text" name="search" placeholder="Search.." />
+    </h1>
+  </form>
+</div>
+<div id="apDiv8">
+  <table width="283" height="107" cellpadding="2" cellspacing="5">
+    <tr>
+      <td width="193"><form id="form3" name="form3" method="post" action="">
+        <label for="textfield"></label>
+        <div align="right">
+          <input name="textfield" type="text" id="textfield" maxlength="50" placeholder="Enter Food Name" />
+        </div>
+      </form></td>
+      <td width="57"><form id="form1" name="form1" method="post" action="">
+        <div align="center">
+          <input type="submit" name="button" id="button" value="ADD" />
+        </div>
+      </form></td>
+    </tr>
+    <tr>
+      <td><form id="form4" name="form3" method="post" action="">
+        <label for="textfield2"></label>
+        <div align="right">
+          <input name="textfield2" type="text" id="textfield2" maxlength="50" placeholder="Enter Food No" />
+        </div>
+      </form></td>
+      <td><form id="form2" name="form2" method="post" action="">
+        <input type="submit" name="REMOVE" id="REMOVE" value="REMOVE" />
+      </form></td>
+    </tr>
+  </table>
+</div>
+<div id="apDiv9"><a href="Homepage.htm" target="_parent"><img src="images/pictures/Untitled-1_07.png" width="132" height="40" /></a></div>
+<div id="apDiv11"><img src="images/pictures/Legend.PNG" width="259" height="145" /></div>
+<div id="apDiv6"><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/images/LUH_07.png" alt="3" width="129" height="37" id="Image1" onclick="MM_showHideLayers('poultry','','show')" onmouseover="MM_swapImage('Image1','','NavButtons/images/LUH_08.png',1)" onmouseout="MM_swapImgRestore()" /><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/images/LUH_01.png" alt="2" width="129" height="37" id="Image2" onclick="MM_showHideLayers('meat','','show')" onmouseover="MM_swapImage('Image2','','NavButtons/images/LUH_03.png',1)" onmouseout="MM_swapImgRestore()" /><img src="NavButtons/images/Untitled-1_11.png" alt="4" width="129" height="37" id="Image3" onclick="MM_showHideLayers('veggies','','show')" onmouseover="MM_swapImage('Image3','','NavButtons/images/LUH_17.png',1)" onmouseout="MM_swapImgRestore()" /><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/images/LUH_13.png" alt="5" width="129" height="37" id="Image4" onclick="MM_showHideLayers('fruits','','show')" onmouseover="MM_swapImage('Image4','','NavButtons/images/LUH_19.png',1)" onmouseout="MM_swapImgRestore()" /><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/images/LUH_15.png" alt="6" width="129" height="37" id="Image5" onclick="MM_showHideLayers('beverages','','show')" onmouseover="MM_swapImage('Image5','','NavButtons/images/LUH_21.png',1)" onmouseout="MM_swapImgRestore()" /><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/images/23_02.png" alt="1" width="128" height="37" id="Image6" onclick="MM_showHideLayers('Others','','show')" onmouseover="MM_swapImage('Image6','','NavButtons/images/23_05.png',1)" onmouseout="MM_swapImgRestore()" /></div>
+<div id="poultry" onmouseover="MM_showHideLayers('poultry','','show')" onmouseout="MM_showHideLayers('poultry','','hide')">
+  <table width="888" height="328" border="3" cellpadding="2" cellspacing="5">
+    <tr>
+      <td width="144"><div align="center">Food No.</div></td>
+      <td width="172"><div align="center">Food Name</div></td>
+      <td width="123"><div align="center">Quantity</div></td>
+      <td width="66"><div align="center">Unit</div></td>
+      <td width="90"><div align="center">Value per unit</div></td>
+      <td width="90"><div align="center">Duration</div></td>
+      <td width="83">&nbsp;</td>
+    </tr>
+    <tr>
+      <td bgcolor="#FF3300">1</td>
+      <td bgcolor="#FF3300">Egg</td>
+      <td bgcolor="#FF3300">5</td>
+      <td bgcolor="#FF3300">Trays</td>
+      <td bgcolor="#FF3300">Php 100.00</td>
+      <td bgcolor="#FF3300">mm-dd-yyyy</td>
+      <td bgcolor="#FF3300"><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Chicken Wings</td>
+      <td>10</td>
+      <td>Kilo</td>
+      <td>Php120 .00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+  </table>
+</div>
+<div id="meat" onmouseover="MM_showHideLayers('meat','','show')" onmouseout="MM_showHideLayers('meat','','hide')">
+  <table width="888" height="328" border="3" cellpadding="2" cellspacing="5">
+    <tr>
+      <td width="144"><div align="center">Food No.</div></td>
+      <td width="172"><div align="center">Food Name</div></td>
+      <td width="123"><div align="center">Quantity</div></td>
+      <td width="66"><div align="center">Unit</div></td>
+      <td width="90"><div align="center">Value per unit</div></td>
+      <td width="90"><div align="center">Duration</div></td>
+      <td width="83">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="34">1</td>
+      <td><p>Burger Patty</p></td>
+      <td>15</td>
+      <td>Kilo</td>
+      <td>Php 115.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Bacon</td>
+      <td>10</td>
+      <td>Pack</td>
+      <td>Php 110.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Beef</td>
+      <td>10</td>
+      <td>Kilo</td>
+      <td>Php 160.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+  </table>
+</div>
+<div id="veggies" onmouseover="MM_showHideLayers('veggies','','show')" onmouseout="MM_showHideLayers('veggies','','hide')">
+  <table width="888" height="328" border="3" cellpadding="2" cellspacing="5">
+    <tr>
+      <td width="144"><div align="center">Food No.</div></td>
+      <td width="172"><div align="center">Food Name</div></td>
+      <td width="123"><div align="center">Quantity</div></td>
+      <td width="66"><div align="center">Unit</div></td>
+      <td width="90"><div align="center">Value per unit</div></td>
+      <td width="90"><div align="center">Duration</div></td>
+      <td width="83">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Garlic</td>
+      <td>3</td>
+      <td>Sack</td>
+      <td>Php 3,500.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Lettuce</td>
+      <td>10</td>
+      <td>Pack</td>
+      <td>Php 400.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Tomato</td>
+      <td>5</td>
+      <td>Kilo</td>
+      <td>Php 4,500.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Onions</td>
+      <td>3</td>
+      <td>Sack</td>
+      <td>Php 3,600.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Potato</td>
+      <td>3</td>
+      <td>Sack</td>
+      <td>Php 3,600.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+  </table>
+</div>
+<div id="fruits" onmouseover="MM_showHideLayers('fruits','','show')" onmouseout="MM_showHideLayers('fruits','','hide')">
+  <table width="888" height="328" border="3" cellpadding="2" cellspacing="5">
+    <tr>
+      <td width="144"><div align="center">Food No.</div></td>
+      <td width="172"><div align="center">Food Name</div></td>
+      <td width="123"><div align="center">Quantity</div></td>
+      <td width="66"><div align="center">Unit</div></td>
+      <td width="90"><div align="center">Value per unit</div></td>
+      <td width="90"><div align="center">Duration</div></td>
+      <td width="83">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Lemon</td>
+      <td>6</td>
+      <td>Kilo</td>
+      <td>Php 1,200.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Mango</td>
+      <td>6</td>
+      <td>Kilo</td>
+      <td>Php 1,200.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Watermelon</td>
+      <td>6</td>
+      <td>Kilo</td>
+      <td>Php 1,200.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+  </table>
+</div>
+<div id="beverages" onmouseover="MM_showHideLayers('beverages','','show')" onmouseout="MM_showHideLayers('beverages','','hide')">
+  <table width="888" height="328" border="3" cellpadding="2" cellspacing="5">
+    <tr>
+      <td width="144"><div align="center">Food No.</div></td>
+      <td width="172"><div align="center">Food Name</div></td>
+      <td width="123"><div align="center">Quantity</div></td>
+      <td width="66"><div align="center">Unit</div></td>
+      <td width="90"><div align="center">Value per unit</div></td>
+      <td width="90"><div align="center">Duration</div></td>
+      <td width="83">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Cerveza Minerva</td>
+      <td>10</td>
+      <td>Case</td>
+      <td>Php 1500.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+    <tr>
+      <td bgcolor="#990000">2</td>
+      <td bgcolor="#990000">Heineken Light</td>
+      <td bgcolor="#990000">0</td>
+      <td bgcolor="#990000">Case</td>
+      <td bgcolor="#990000">Php 2500.00</td>
+      <td bgcolor="#990000">mm-dd-yyyy</td>
+      <td bgcolor="#990000"><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+    <tr>
+      <td bgcolor="#990000">3</td>
+      <td bgcolor="#990000">San Mig Light</td>
+      <td bgcolor="#990000">0</td>
+      <td bgcolor="#990000">Case</td>
+      <td bgcolor="#990000">Php 1200.00</td>
+      <td bgcolor="#990000">mm-dd-yyyy</td>
+      <td bgcolor="#990000"><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>A&amp;W Root Beer</td>
+      <td>10</td>
+      <td>Case</td>
+      <td>Php 1200.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Coke</td>
+      <td>10</td>
+      <td>Case</td>
+      <td>Php 1500.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+  </table>
+</div>
+<div id="Others" onmouseover="MM_showHideLayers('Others','','show')" onmouseout="MM_showHideLayers('Others','','hide')">
+  <table width="888" height="328" border="3" cellpadding="2" cellspacing="5">
+    <tr>
+      <td width="144"><div align="center">Food No.</div></td>
+      <td width="172"><div align="center">Food Name</div></td>
+      <td width="123"><div align="center">Quantity</div></td>
+      <td width="66"><div align="center">Unit</div></td>
+      <td width="90"><div align="center">Value per unit</div></td>
+      <td width="90"><div align="center">Duration</div></td>
+      <td width="83">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Burger Buns</td>
+      <td>10</td>
+      <td>Pack</td>
+      <td>Php 500.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Nacho Chips</td>
+      <td>5</td>
+      <td>Pack</td>
+      <td>Php 500.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Fries</td>
+      <td>10</td>
+      <td>Pack</td>
+      <td>Php 800.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Chips</td>
+      <td>10</td>
+      <td>Pack</td>
+      <td>Php 780.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><p>Chocolate</p></td>
+      <td>5</td>
+      <td>Bar</td>
+      <td>Php 300.00</td>
+      <td>mm-dd-yyyy</td>
+      <td><img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /></td>
+    </tr>
+  </table>
+<img src="file:///C|/Users/azaleaflores/Desktop/SADTHESIS++/ADMINUI22/NavButtons/add.png" alt="2" width="33" height="29" onclick="MM_popupMsg('SUPPLY ADDED!')" /> </div>
+<div id="apDiv14">
+  <form id="form6" name="form6" method="post" action="">
+    <input name="button3" type="submit" id="button3" onclick="MM_goToURL('parent','SUPPLIES.html');return document.MM_returnValue" value="VIEW SUPPLIES ADDED" />
+  </form>
+</div>
+<img src="images/NavButtons/Untitled-2.png" width="1468" height="1494" />
+</body>
+</html>

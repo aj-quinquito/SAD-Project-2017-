@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Registration</title>
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	left:218px;
+	top:0px;
+	width:1081px;
+	height:170px;
+	z-index:1;
+}
+#apDiv2 {
+	position:absolute;
+	left:218px;
+	top:172px;
+	width:1081px;
+	height:83px;
+	z-index:2;
+}
+body {
+	background-color: #FFF;
+	background-image: url(file:///C|/Users/Bebem/Desktop/STAFF-UI/wallpaper.jpg);
+}
+#apDiv3 {
+	position:absolute;
+	left:484px;
+	top:181px;
+	width:68px;
+	height:43px;
+	z-index:3;
+}
+#apDiv4 {
+	position:absolute;
+	left:233px;
+	top:45px;
+	width:43px;
+	height:39px;
+	z-index:3;
+}
+#apDiv5 {
+	position:absolute;
+	left:224px;
+	top:103px;
+	width:59px;
+	height:54px;
+	z-index:4;
+}
+#apDiv6 {
+	position:absolute;
+	left:287px;
+	top:23px;
+	width:151px;
+	height:139px;
+	z-index:5;
+	text-align: center;
+	visibility: hidden;
+}
+.zzz {
+	font-family: sans-serif;
+}
+#apDiv6 {
+}
+#apDiv7 {
+	position:absolute;
+	left:312px;
+	top:172px;
+	width:117px;
+	height:65px;
+	z-index:6;
+}
+#apDiv8 {
+	position:absolute;
+	left:439px;
+	top:172px;
+	width:118px;
+	height:63px;
+	z-index:7;
+}
+#apDiv9 {
+	position:absolute;
+	left:564px;
+	top:172px;
+	width:180px;
+	height:65px;
+	z-index:8;
+}
+#apDiv10 {
+	position:absolute;
+	left:646px;
+	top:172px;
+	width:213px;
+	height:63px;
+	z-index:9;
+}
+#apDiv11 {
+	position:absolute;
+	left:752px;
+	top:172px;
+	width:227px;
+	height:64px;
+	z-index:10;
+}
+#apDiv12 {
+	position:absolute;
+	left:987px;
+	top:172px;
+	width:211px;
+	height:65px;
+	z-index:11;
+}
+#apDiv13 {
+	position:absolute;
+	left:1035px;
+	top:0px;
+	width:72px;
+	height:24px;
+	z-index:12;
+}
+#apDiv14 {
+	position:absolute;
+	left:1129px;
+	top:0px;
+	width:148px;
+	height:22px;
+	z-index:13;
+}
+#apDiv15 {
+	position:absolute;
+	left:467px;
+	top:116px;
+	width:509px;
+	height:631px;
+	border-radius:20px;
+	/* [disabled]z-index:12; */
+}
+#apDiv16 {
+	position:absolute;
+	left:572px;
+	top:281px;
+	width:233px;
+	height:36px;
+	z-index:13;
+}
+#apDiv17 {
+	position:absolute;
+	left:542px;
+	top:285px;
+	width:63px;
+	height:13px;
+	z-index:13;
+}
+#apDiv18 {
+	position:absolute;
+	left:391px;
+	top:63px;
+	width:667px;
+	height:42px;
+	z-index:13;
+	font-size: 18px;
+}
+#apDiv15 div table tr td {
+	color: #FFF;
+	font-family: Nordica;
+}
+#apDiv19 {
+	position:absolute;
+	left:532px;
+	top:805px;
+	width:428px;
+	height:96px;
+	z-index:14;
+}
+#apDiv20 {
+	position:absolute;
+	left:705px;
+	top:811px;
+	width:86px;
+	height:17px;
+	z-index:14;
+	visibility: visible;
+}
+#apDiv18 div p {
+	font-family: Nordica;
+	color: #000;
+	font-size: 36px;
+}
+#apDiv20 #Submit {
+	height: 28px;
+}
+#apDiv21 {
+	position:absolute;
+	left:141px;
+	top:453px;
+	width:178px;
+	height:112px;
+	z-index:15;
+}
+#apDiv18 div h1 {
+	color: #CCC;
+}
+</style>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+</script>
+</head>
+
+<body>
+<div id="apDiv6">
+  <form id="telephonenum" name="telephonenum" method="post" action="">
+    <p><span class="zzz">950-9054</span> </p>
+    <p class="zzz">09281462234</p>
+    <p class="zzz">09196129697</p>
+    <p class="zzz">09959573240</p>
+  </form>
+</div>
+<div id="apDiv15">
+  <div align="center"><br />
+    <table width="483" height="382" cellpadding="8" >
+      <tr>
+        <td width="157" height="43" bgcolor="#4B3619">First Name:</td>
+        <td width="286" bgcolor="#644117"><label for="fn2"></label>
+        <input name="fn" type="text" id="fn2" value="" size="47" placeholder="Enter first name" /></td>
+      </tr>
+      <tr>
+        <td height="49" bgcolor="#4B3619">Middle Name:</td>
+        <td bgcolor="#644117"><label for="mn"></label>
+        <input name="mn" type="text" id="mn" value="" size="47" placeholder="Enter middle name" /></td>
+      </tr>
+      <tr>
+        <td height="37" bgcolor="#4B3619">Last name:</td>
+        <td bgcolor="#644117"><label for="ln"></label>
+        <input name="ln" type="text" id="ln" value="" size="47" placeholder="Enter last name" /></td>
+      </tr>
+      <tr>
+        <td height="48" bgcolor="#4B3619">Mobile/Landline no:</td>
+        <td bgcolor="#644117"><label for="ml"></label>
+        <input name="ml" type="text" id="ml" value="" size="47" placeholder="Enter your number" /></td>
+      </tr>
+      <tr bgcolor="#4B3619">
+        <td height="36" colspan="2" bgcolor="#2B1F0F"><div align="center"><strong>ADDRESS:</strong></div></td>
+      </tr>
+      <tr>
+        <td height="36" bgcolor="#4B3619">House number:</td>
+        <td bgcolor="#604017"><input name="fn2" type="text" id="fn" value="" size="47" placeholder="House number" /></td>
+      </tr>
+      <tr>
+        <td height="36" bgcolor="#4B3619">Street:</td>
+        <td bgcolor="#604017"><input name="fn3" type="text" id="fn3" value="" size="47" placeholder="Street" /></td>
+      </tr>
+      <tr>
+        <td height="36" bgcolor="#4B3619">City/Municipal: </td>
+        <td bgcolor="#604017"><form id="form2" name="form2" method="post" action="">
+          <label for="CITYLIST"></label>
+          <select name="CITYLIST" size="1" id="CITYLIST">
+            <option>Makati</option>
+            <option>Pasig</option>
+            <option>Taguig</option>
+            <option>Pateros</option>
+          </select>
+        </form></td>
+      </tr>
+      <tr bgcolor="#4B3619">
+        <td height="36" colspan="2" bgcolor="#2B1F0F"><div align="center"><strong>SECURE YOUR ACCOUNT:</strong></div></td>
+      </tr>
+      <tr>
+        <td height="36" bgcolor="#4B3619">E-mail</td>
+        <td bgcolor="#604017"><label for="e-mail"></label>
+        <input name="e-mail" type="text" id="e-mail" value="" size="47" placeholder="Enter e-mail" /></td>
+      </tr>
+      <tr>
+        <td height="39" bgcolor="#4B3619">Username:</td>
+        <td bgcolor="#604017"><label for="un"></label>
+        <input name="un" type="text" id="un" value="" size="47" placeholder="Minimun of 8 characters" /></td>
+      </tr>
+      <tr>
+        <td bgcolor="#4B3619">Password:</td>
+        <td bgcolor="#604017"><label for="pass"></label>
+        <input name="pass" type="text" id="pass" value="" size="47" placeholder="Minimun of 8 password" /></td>
+      </tr>
+      <tr>
+        <td bgcolor="#2B1F0F"><input name="create" type="submit" id="create" onclick="MM_popupMsg('You have successfully created an account! Please login now!');MM_goToURL('parent','file:///C|/Users/Bebem/Desktop/CUSTOMER-UI/Homepage.htm');return document.MM_returnValue" value="Create Account" /></td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </div>
+  <p align="left">&nbsp;</p>
+</div>
+<div id="apDiv18">
+  <div align="center">
+    <h1>Customer Registration</h1>
+  </div>
+</div>
+<div id="apDiv20">
+  <form id="form1" name="form1" method="post" action="file:///C|/Users/Bebem/Desktop/STAFF-UI/NEWlogin.php">
+  </form>
+</div>
+<p>&nbsp;</p>
+</body>
+</html>
